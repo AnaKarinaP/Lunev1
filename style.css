@@ -1,0 +1,167 @@
+/* Estilos generales */
+body {
+  text-align: center;
+  background-color: #fff7f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* Contenedor general */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilo del encabezado */
+h1 {
+  color: #d48c8c;
+  font-size: 48px;
+  margin: 20px 0 10px;
+}
+
+/* Título de sección */
+h2 {
+  font-size: 32px;
+  color: #d48c8c;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/* Navegación con Flexbox */
+ul {
+  background-color: #d48c8c;
+  padding: 10px 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+ul li {
+  margin: 0 15px;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+ul li a:hover {
+  background-color: #bb6d6d;
+}
+
+/* Footer con Flexbox */
+footer {
+  background-color: #d48c8c;
+  color: white;
+  padding: 20px 0;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Imágenes */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+/* Grid de productos */
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.producto {
+  background-color: #f0dcdc;
+  padding: 20px;
+  border-radius: 10px;
+  color: #333;
+}
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul li {
+    margin: 10px 0;
+  }
+
+  .productos-grid {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  img {
+    margin: 15px 0;
+  }
+}
+
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  ul li a {
+    font-size: 16px;
+    padding: 6px 10px;
+  }
+
+  .producto {
+    padding: 15px;
+  }
+
+  footer {
+    flex-direction: column;
+    font-size: 14px;
+  }
+}
+
+/* Enlaces al pasar el mouse */
+ul li a:hover {
+  background-color: #bb6d6d;
+}
+
+/* Productos al pasar el mouse */
+.producto:hover {
+  background-color: #e5bfbf;
+}
+
+/* Input enfocado */
+input:focus {
+  border: 2px solid #d48c8c;
+}
+
