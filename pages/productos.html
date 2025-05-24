@@ -1,70 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style.css" />
-    <title>LUNE PASTELERIA - Productos</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="./productos.html">Productos</a></li>
-          <li><a href="./contacto.html">Contacto</a></li>
-          <li><a href="./eventos.html">Eventos</a></li>
-          <li><a href="./nosotros.html">Nosotros</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../style.css" />
+  <title>LUNE PASTELERIA - Productos</title>
+</head>
+<body>
+  <header class="menu-sticky">
+    <nav>
+      <p class="logo">LUNE</p>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="./productos.html">Productos</a></li>
+        <li><a href="./eventos.html">Eventos</a></li>
+        <li><a href="./clases.html">Clases</a></li>
+        <li><a href="./nosotros.html">Nosotros</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-      <div class="container">
-        <h1>LUNE</h1>
-        <h2>Productos</h2>
+  <main>
+    <div class="container" style="position: relative;">
+      <div class="sello">Hecho a Mano</div>
+      <h1>Productos</h1>
+      <div class="productos-grid">
+        <div class="producto">
+          <img src="../imagenes/galleta vinilla.JPG" alt="galleta">
+          <h3>Cookie Vainilla</h3>
+        </div>
+        <div class="producto">
+          <img src="../imagenes/galleta red.JPG" alt="galleta roja">
+          <h3>Cookie Red Velvet</h3>
+        </div>
+        <div class="producto">
+          <img src="../imagenes/tarta frambuesa.JPG" alt="tarta frambuesa">
+          <h3>Tarta Frambuesa Vainilla</h3>
+        </div>
+        <div class="producto">
+          <img src="../imagenes/tarta cereza.JPG" alt="tarta cereza">
+          <h3>Tarta Cereza</h3>
+        </div>
+        <div class="producto">
+          <img src="../imagenes/tarta frambuesa chocolate.JPG" alt="tarta frambuesa y chocolate">
+          <h3>Tarta Frambuesa Chocolate</h3>
+        </div>
+        <div class="producto">
+          <img src="../imagenes/tarta cereza chocolate.JPG" alt="tarta cereza y chocolate">
+          <h3>Tarta Cereza Chocolate</h3>
+        </div>
+        <div class="producto">
+          <img src="../imagenes/tarta snickers.JPG" alt="tarta snickers">
+          <h3>Tarta Snickers</h3>
+        </div>
+        <div class="producto">
+          <img src="../imagenes/torta frambuesa.JPG" alt="torta frambuesa">
+          <h3>Torta Frambuesa</h3>
+        </div>
+      </div>
+    </div>
+  </main>
 
-        <div class="productos-grid">
-          <div class="producto">
-            <img src="../imagenes/galleta vinilla.JPG" alt="galleta">
-            <h3>Cookie Vainilla</h3>
-          </div>
-          <div class="producto">
-            <img src="../imagenes/galleta red.JPG" alt="galleta roja">
-            <h3>Cookie Red Velvet</h3>
-          </div>
-          <div class="producto">
-            <img src="../imagenes/tarta frambuesa.JPG" alt="tarta frambuesa">
-            <h3>Tarta Frambuesa Vainilla</h3>
-          </div>
-          <div class="producto">
-            <img src="../imagenes/tarta cereza.JPG" alt="tarta cereza">
-            <h3>Tarta Cereza</h3>
-          </div>
-          <div class="producto">
-            <img src="../imagenes/tarta frambuesa chocolate.JPG" alt="tarta frambuesa y chocolate">
-            <h3>Tarta Frambuesa Chocolate</h3>
-          </div>
-          <div class="producto">
-            <img src="../imagenes/tarta cereza chocolate.JPG" alt="tarta cereza y chocolate">
-            <h3>Tarta Cereza Chocolate</h3>
-          </div>
-          <div class="producto">
-            <img src="../imagenes/tarta snickers.JPG" alt="tarta snickers">
-            <h3>Tarta Snickers</h3>
-          </div>
-          <div class="producto">
-            <img src="../imagenes/torta frambuesa.JPG" alt="torta frambuesa">
-            <h3>Torta Frambuesa</h3>
-          </div>
-        </div> <!-- Cierre productos-grid -->
-      </div> <!-- Cierre container -->
-    </main>
-
-    <footer>
-      <p>&copy; Copyright, LUNE, 2025</p>
-    </footer>
-  </body>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-left">
+        <form action="#" method="post">
+          <label for="contacto">Dejanos tu consulta:</label>
+          <input type="text" name="contacto" id="contacto" placeholder="Escribí tu mensaje acá" />
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+      <div class="footer-right">
+        <p>&copy; 2025 LUNE. Todos los derechos reservados.</p>
+      </div>
+    </div>
+    <div class="footer-bottom-center">
+      <p>Seguinos en: <strong>@lune.mam</strong></p>
+    </div>
+  </footer>
+</body>
 </html>
+
 
 
